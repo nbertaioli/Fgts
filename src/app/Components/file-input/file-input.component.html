@@ -1,0 +1,6 @@
+<input type="file" (change)="onFileSelected($event)" accept=".pdf,.jpg" multiple/>
+<button (click)="uploadFiles()">Upload Files</button>
+<app-data-table [dataSource]="data"></app-data-table>
+<div class="loading-spinner" *ngIf="isLoading">
+  <mat-spinner color="primary" [diameter]="50"></mat-spinner>
+</div>

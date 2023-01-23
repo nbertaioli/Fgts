@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+      <tr>
+          <th>Remuneração</th>
+          <th>Competência</th>
+          <th>Data de validade</th>
+          <th>Depósito de contribuição sindical</th>
+          <th>Total a recolher</th>
+          <th>Razão social</th>
+          <th>Telefone</th>
+          <th>CNPJ</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let data of dataSource">
+          <td>{{ data.remuneracao }}</td>
+          <td>{{ data.competencia }}</td>
+          <td>{{ data.dataValidade }}</td>
+          <td>{{ data.depositoContribuicaoSindical }}</td>
+          <td>{{ data.totalARecolher }}</td>
+          <td>{{ data.razaoSocial }}</td>
+          <td>{{ data.telefone }}</td>
+          <td>{{ data.cnpj }}</td>
+      </tr>
+  </tbody>
+</table>
